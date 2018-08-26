@@ -1502,7 +1502,7 @@ pre code {
 .form-control {
     display: block;
     width: 100%;
-    padding: .65rem 1.25rem;
+    padding: 1.25rem;
     font-size: 1rem;
     line-height: 1.25;
     color: #495057;
@@ -1510,7 +1510,7 @@ pre code {
     background-image: none;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem;
+    border-radius: 0;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 
@@ -22861,16 +22861,21 @@ body.m-portlet--fullscreen.m-aside-left--fixed .m-aside-left {
     margin-bottom: 66px;
 }
 .widget-container {
-    border: 2px solid #575962;
+    border: 2px solid #3333;
     margin-top: 50px
 }
 .widget-container:last-child{
     border-bottom: 0;
 }
 .widget-content{
-    border-bottom: 2px solid #575962;
+    border-bottom: 2px solid #3333;
     padding: 25px;
 }
+
+.fade-text{
+    color: #3333
+}
+
 .counting-number {
     margin-right: 25px;
     font-size: 1rem;
@@ -28927,7 +28932,7 @@ th>.m-checkbox.m-checkbox--single {
 
 .m-switch.m-switch--warning:not(.m-switch--outline) input:empty~span:after {
     color: #ffb822;
-    background-color: #111;
+    background-color: #fff;
     opacity: .4
 }
 
@@ -29572,8 +29577,10 @@ th>.m-checkbox.m-checkbox--single {
     border-bottom: 0
 }
 
-.m-form.m-form--group-seperator-dashed .m-form__group {
-    border-bottom: 1px dashed #ebedf2
+.m-form--group-seperator-dashed {
+    border-bottom: 1px dashed #ebedf2;
+    display: block;
+    margin: 15px 30px;
 }
 
 .m-form.m-form--group-seperator-dashed .m-form__group.m-form__group--last,
@@ -41767,4 +41774,16 @@ body.m-content--skin-light2 {
 
 .spacing-top{
    margin-top: 2.4em;;
+}
+
+.label-text-sm {
+    margin-top: 8px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.label-text{
+ margin-bottom: 15px
+}
+b, label{
+    font-weight: bold !important;
 }
