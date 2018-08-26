@@ -19847,47 +19847,47 @@ code {
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge:before {
-    background-color: #ebedf2
+    border: 1px solid #ebedf2
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--brand:before {
-    background-color: #716aca
+   border: 1px solid #716aca
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--metal:before {
-    background-color: #c4c5d6
+    border: 1px solid #c4c5d6
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--light:before {
-    background-color: #fff
+   border: 1px solid #fff
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--accent:before {
-    background-color: #00c5dc
+    border: 1px solid #00c5dc
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--focus:before {
-    background-color: #9816f4
+   border: 1px solid #9816f4
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--primary:before {
-    background-color: #5867dd
+   border: 1px solid #5867dd
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--success:before {
-    background-color: #34bfa3
+   border: 1px solid #34bfa3
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--info:before {
-    background-color: #36a3f7
+    border: 1px solid #36a3f7
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--warning:before {
-    background-color: #ffb822
+    border: 1px solid #ffb822
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge.m-list-timeline__badge--danger:before {
-    background-color: #f4516c
+    border: 1px solid #f4516c
 }
 
 .m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__icon {
@@ -21389,10 +21389,6 @@ body.m-portlet--fullscreen.m-aside-left--fixed .m-aside-left {
     background-color: #fff
 }
 
-.m-portlet .m-portlet__head {
-    border-bottom: 1px solid #ebedf2
-}
-
 .m-portlet .m-portlet__head .m-portlet__head-icon {
     color: #b2b1c5
 }
@@ -22861,11 +22857,39 @@ body.m-portlet--fullscreen.m-aside-left--fixed .m-aside-left {
 .m-widget3 .m-widget3__item:last-child {
     border-bottom: 0
 }
+.m-widget14 .m-widget14__chart {
+    margin-bottom: 66px;
+}
+.widget-container {
+    border: 2px solid #575962;
+    margin-top: 50px
+}
+.widget-container:last-child{
+    border-bottom: 0;
+}
+.widget-content{
+    border-bottom: 2px solid #575962;
+    padding: 25px;
+}
+.counting-number {
+    margin-right: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.widget-text {
+    font-size: 1rem ;
+    font-weight: normal;
+}
 
 .m-widget4 .m-widget4__item {
     display: table;
     padding-top: 1.15rem;
     padding-bottom: 1.25rem
+}
+
+.m-widget4{
+  margin-top: -52px;
 }
 
 .m-widget4 .m-widget4__item .m-widget4__img {
@@ -23693,7 +23717,8 @@ body.m-portlet--fullscreen.m-aside-left--fixed .m-aside-left {
 }
 
 .m-widget14 {
-    padding: 2.2rem
+    padding: 1.7rem;
+    padding-top: 5px;
 }
 
 .m-widget14 .m-widget14__header {
@@ -39772,6 +39797,8 @@ body.m-content--skin-light2 {
     content: ""
 }
 
+
+
 .m-aside-menu .m-menu__nav>.m-menu__item>.m-menu__arrow:before {
     position: relative;
     top: 0;
@@ -40598,6 +40625,9 @@ body.m-content--skin-light2 {
         -o-animation: m-aside-menu-submenu-fade-in .3s ease 1, m-aside-menu-submenu-move-down .3s ease-out 1;
         animation: m-aside-menu-submenu-fade-in .3s ease 1, m-aside-menu-submenu-move-down .3s ease-out 1
     }
+    .m-topbar__nav-wrapper .m-btn--air{
+        margin-top: 30px
+      }
 }
 
 @media screen\0 and (min-width:993px) {
@@ -41563,9 +41593,18 @@ body.m-content--skin-light2 {
     font-size: .8rem !important
 }
 
+.widget-block {
+    border: 2px solid #575962;
+    width: 45%;
+    padding: 15px
+}
+
 @media (max-width:992px) {
     .m-subheader {
         padding: 30px 20px 0 20px
+    }
+    .display-3{
+        font-size: 2rem;
     }
 }
 
@@ -41593,12 +41632,21 @@ body.m-content--skin-light2 {
     padding: 7px 30px;
     height: 60px;
     min-height: 60px;
-    background: #fff;
+    background: #dee0e8;
     -webkit-box-shadow: -2px -8px 41px -14px rgba(202, 210, 222, .61);
     -moz-box-shadow: -2px -8px 41px -14px rgba(202, 210, 222, .61);
     box-shadow: -2px -8px 41px -14px rgba(202, 210, 222, .61)
 }
-
+.font-2x{
+    font-size: 65px;
+}
+.quick-links {
+    font-size: 17px;
+    font-weight: bold;
+}
+.widget-blocks-container {
+    margin: 40px;
+}
 .m-footer .m-footer__copyright {
     font-size: .9rem;
     font-weight: 400;
@@ -41606,6 +41654,14 @@ body.m-content--skin-light2 {
 }
 
 @media (min-width:993px) {
+    .widget-blocks {
+        border: 2px solid #3333;
+        padding: 20px;
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+    }
     .m-footer--fixed .m-footer {
         position: fixed;
         bottom: 0;
@@ -41632,7 +41688,7 @@ body.m-content--skin-light2 {
         -ms-transition: none;
         -o-transition: none;
         transition: none;
-        left: 255px
+        left: 298px
     }
     .m-footer--fixed.m-footer--push.m-aside-left--enabled.m-aside-left--minimize .m-footer {
         -webkit-transition: none;
@@ -41648,7 +41704,7 @@ body.m-content--skin-light2 {
         -ms-transition: none;
         -o-transition: none;
         transition: none;
-        margin-left: 255px;
+        margin-left: 298px;
         margin-top: -60px
     }
     .m-footer--push.m-aside-left--enabled:not(.m-footer--fixed).m-aside-left--minimize .m-footer {
@@ -41707,4 +41763,8 @@ body.m-content--skin-light2 {
 
 .m-modal-purchase .m-purchase-steps .card .card-block {
     padding: 20px 20px 0 20px
+}
+
+.spacing-top{
+   margin-top: 2.4em;;
 }
