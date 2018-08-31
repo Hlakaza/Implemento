@@ -41816,10 +41816,6 @@ b, label{
     margin-left: -45px;
 }
 
-
-.nav.nav-tabs .nav-item {
-    margin-left: 45px;
-}
 .nav-item:first-child .nav-link.active{
     margin-left: 0 !important;
 }
