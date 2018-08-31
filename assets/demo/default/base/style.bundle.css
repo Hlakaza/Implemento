@@ -41852,3 +41852,12 @@ b, label{
     _border-color: #000000 #000000 #000000 #efefef;
     _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
  }
+
+ .pad-l-r-1em {
+   padding-left: 2.2em;
+   padding-right: 2.2em;
+   padding-bottom: 2.2rem
+ }
+ .nag-marg-top-2{
+     margin-top: -2px; 
+ }
