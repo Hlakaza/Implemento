@@ -268,7 +268,7 @@
 							<div class="m-portlet__head-caption">
 								<div class="m-portlet__head-title">
 									<h3 class="m-portlet__head-text">
-										Adjusted Tabs
+										Setup Details
 									</h3>
 								</div>
 							</div>
@@ -314,9 +314,9 @@
 										</div>
 										<div class="row">
 											<div class="col-sm-3">
-												<span class="m-switch m-switch--success" onclick="toggle_visibility('foo');">
+												<span class="m-switch m-switch--success">
 													<label>
-														<input type="checkbox" checked="checked" name="">
+														<input onclick="toggle_visibility('publicEntity');" type="checkbox" checked="checked" name="publicEntity">
 														<span></span>
 														<b class="label-text-sm">Public Entity</b>&nbsp;
 													</label>
@@ -333,7 +333,7 @@
 											</div>
 										</div>
 										<div class="m-form--group-seperator-dashed"></div>
-										<section id="foo">
+										<span id="publicEntity">
 											<div class="label-text spacing-top">
 												<b style="font-weight: bold; padding-bottom: 15px">Public Entity</b>
 											</div>
@@ -350,7 +350,7 @@
 												<div class="col-sm-3">
 													<span class="m-switch m-switch--success">
 														<label>
-															<input type="checkbox" checked="checked" name="">
+															<input type="checkbox" onclick="toggle_visibility('provintialGovernment');" checked="checked" name="provintialGovernment">
 															<span></span>
 															<b class="label-text-sm">Provintial Government</b>&nbsp;
 														</label>
@@ -366,36 +366,39 @@
 													</span>
 												</div>
 											</div>
-										</section>
+										
 							
 										<div class="m-form--group-seperator-dashed"></div>
-										<div class="row">
-											<h2 class="pad-top col-12 fade-text">Provintial Government</h2>
-											<div class="col-lg-12 pad-top">
-												<label>
-													Organisation Name
-												</label>
-												<input type="text" class="form-control m-input" placeholder="Type name">
+										<span id="provintialGovernment">
+											<div class="row">
+												<h2 class="pad-top col-12 fade-text">Provintial Government</h2>
+												<div class="col-lg-12 pad-top">
+													<label>
+														Organisation Name
+													</label>
+													<input type="text" class="form-control m-input" placeholder="Type name">
+												</div>
+												<div class="col-lg-12 pad-top">
+													<label>
+														Organisation Address
+													</label>
+													<textarea type="text" class="form-control m-input" placeholder="Type Address"></textarea>
+												</div>
+												<div class="col-lg-6">
+													<label class="pad-top">
+														Phone Number:
+													</label>
+													<input type="text" class="form-control m-input" placeholder="Type Phone Number">
+												</div>
+												<div class="col-lg-6">
+													<label class="pad-top">
+														Fax Number
+													</label>
+													<input type="text" class="form-control m-input" placeholder="Type Fax Number">
+												</div>
 											</div>
-											<div class="col-lg-12 pad-top">
-												<label>
-													Organisation Address
-												</label>
-												<textarea type="text" class="form-control m-input" placeholder="Type Address"></textarea>
-											</div>
-											<div class="col-lg-6">
-												<label class="pad-top">
-													Phone Number:
-												</label>
-												<input type="text" class="form-control m-input" placeholder="Type Phone Number">
-											</div>
-											<div class="col-lg-6">
-												<label class="pad-top">
-													Fax Number
-												</label>
-												<input type="text" class="form-control m-input" placeholder="Type Fax Number">
-											</div>
-										</div>
+										</span>
+									</span>
 									</form>
 								</div>
 								<div class="tab-pane" id="m_tabs_2_2" role="tabpanel">
@@ -466,27 +469,10 @@
 	<!--begin::Page Snippets -->
 	<script src="assets/app/js/dashboard.js" type="text/javascript"></script>
 	<script type="text/javascript">
-			// function toggle_visibility(id) {
-			//    var e = document.getElementById(id);
-			// 	if(e.style.display == 'block') {
-			// 	   e.style.display = 'none';
-			// 	} else if (e.style.display = 'none') {
-			// 		e.style.display = 'block';
-			//    }		
-			// }
-			$(document).ready(function () {
-				$("select").change(function (){
-					$("section").hide();
-					if($(this).val() == 'yellow') {
-						$("div.yellow").show();
-					}
-					else if($(this).val() == 'red') {
-						$("div.red").show();
-					}
-				});
-			});
-
-		</script>
+		function toggle_visibility(id) {
+			$('#'+id).toggle('hidden');	
+		}
+	</script>
 	<!--end::Page Snippets -->
 </body>
 <!-- end::Body -->
