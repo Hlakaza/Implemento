@@ -148,7 +148,7 @@
 																</a>
 															</li>
 															<li class="m-nav__item">
-																<a href="snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+																<a href="#" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
 																	Logout
 																</a>
 															</li>
@@ -314,7 +314,7 @@
 										</div>
 										<div class="row">
 											<div class="col-sm-3">
-												<span class="m-switch m-switch--success">
+												<span class="m-switch m-switch--success" onclick="toggle_visibility('foo');">
 													<label>
 														<input type="checkbox" checked="checked" name="">
 														<span></span>
@@ -333,38 +333,41 @@
 											</div>
 										</div>
 										<div class="m-form--group-seperator-dashed"></div>
-										<div class="label-text spacing-top">
-											<b style="font-weight: bold; padding-bottom: 15px">Public Entity</b>
-										</div>
-										<div class="row">
-											<div class="col-sm-3">
-												<span class="m-switch">
-													<label>
-														<input type="checkbox" name>
-														<span></span>
-														<b class="label-text-sm">National Government</b>&nbsp;
-													</label>
-												</span>
+										<section id="foo">
+											<div class="label-text spacing-top">
+												<b style="font-weight: bold; padding-bottom: 15px">Public Entity</b>
 											</div>
-											<div class="col-sm-3">
-												<span class="m-switch m-switch--success">
-													<label>
-														<input type="checkbox" checked="checked" name="">
-														<span></span>
-														<b class="label-text-sm">Provintial Government</b>&nbsp;
-													</label>
-												</span>
+											<div class="row">
+												<div class="col-sm-3">
+													<span class="m-switch">
+														<label>
+															<input type="checkbox" name>
+															<span></span>
+															<b class="label-text-sm">National Government</b>&nbsp;
+														</label>
+													</span>
+												</div>
+												<div class="col-sm-3">
+													<span class="m-switch m-switch--success">
+														<label>
+															<input type="checkbox" checked="checked" name="">
+															<span></span>
+															<b class="label-text-sm">Provintial Government</b>&nbsp;
+														</label>
+													</span>
+												</div>
+												<div class="col-sm-3">
+													<span class="m-switch">
+														<label>
+															<input type="checkbox" name="">
+															<span></span>
+															<b class="label-text-sm">Local Government</b>&nbsp;
+														</label>
+													</span>
+												</div>
 											</div>
-											<div class="col-sm-3">
-												<span class="m-switch">
-													<label>
-														<input type="checkbox" name="">
-														<span></span>
-														<b class="label-text-sm">Local Government</b>&nbsp;
-													</label>
-												</span>
-											</div>
-										</div>
+										</section>
+							
 										<div class="m-form--group-seperator-dashed"></div>
 										<div class="row">
 											<h2 class="pad-top col-12 fade-text">Provintial Government</h2>
@@ -462,6 +465,28 @@
 	<!--end::Page Vendors -->
 	<!--begin::Page Snippets -->
 	<script src="assets/app/js/dashboard.js" type="text/javascript"></script>
+	<script type="text/javascript">
+			// function toggle_visibility(id) {
+			//    var e = document.getElementById(id);
+			// 	if(e.style.display == 'block') {
+			// 	   e.style.display = 'none';
+			// 	} else if (e.style.display = 'none') {
+			// 		e.style.display = 'block';
+			//    }		
+			// }
+			$(document).ready(function () {
+				$("select").change(function (){
+					$("section").hide();
+					if($(this).val() == 'yellow') {
+						$("div.yellow").show();
+					}
+					else if($(this).val() == 'red') {
+						$("div.red").show();
+					}
+				});
+			});
+
+		</script>
 	<!--end::Page Snippets -->
 </body>
 <!-- end::Body -->
