@@ -41847,6 +41847,17 @@ b, label{
     }
 }
 
+@media(max-width: 1024px) {
+    .nav.nav-tabs{
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .nav.nav-tabs .nav-link{
+       width: 250px;
+    }
+}
+
 @media (max-width:992px) {
     .m-footer {
         height: auto;
